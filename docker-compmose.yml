@@ -1,0 +1,9 @@
+services:
+  shopping-buddy:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./data:/data
